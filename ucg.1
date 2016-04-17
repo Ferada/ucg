@@ -1,0 +1,33 @@
+.TH UCG 1 "2016-04-17" "0.2.2"
+.
+.SH NAME
+ucg \- the UniversalCodeGrep code search tool
+.SH SYNOPSIS
+.B ucg
+.RI [ OPTION .\|.\|.]\&
+.I PATTERN
+.RI [ FILES\ OR\ DIRECTORIES ]
+.br
+.SH DESCRIPTION
+UniversalCodeGrep
+.RB ( ucg )
+is an extremely fast grep-like tool specialized for searching large bodies of source code.
+It is intended to be largely command-line compatible with Ack, to some extent with ag, and where appropriate with grep.
+Search patterns are specified as PCRE regexes.
+.
+.SH OPTIONS
+.SS "Informational options"
+.TP
+.BR \-? ", " \-\^\-help
+Output a usage message and exit.
+.TP
+.B \-\^\-usage
+Give a short usage message
+.TP
+.BR \-V ", " \-\^\-version
+Print program version and exit.
+.
+.SH "SEE ALSO"
+grep(1), ack(1), ag(1)
+.SH AUTHOR
+Gary R.\& Van Sickle (grvs@users.sourceforge.net)
